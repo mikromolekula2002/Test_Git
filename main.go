@@ -18,7 +18,7 @@ func main() {
 	ctx := context.Background()
 
 	// Установка значения
-	err := rdb.Set(ctx, "Костя", "тупоголовый урод, не умеющий разговаривать с людьми, вечно пытается кого-то оскорбить", 0).Err()
+	err := rdb.Set(ctx, "Костя", "норм челик, умеет играть в доту, однако много ноет (|)", 0).Err()
 	if err != nil {
 		panic(err)
 	}
@@ -28,5 +28,5 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Println("значение кости:", val)
+	fmt.Println("значение Костяна:", val)
 }
